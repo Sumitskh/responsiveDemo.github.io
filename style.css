@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.navbar {
+    display: flex;
+    background-color: #eee1e1;
+    justify-content: space-between;
+}
+
+.logo {
+    padding: 10px;
+    font-size: 25px;
+}
+
+.list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.list li {
+    padding-right: 10px;
+    list-style: none;
+}
+
+.list li a {
+    text-decoration: none;
+    color: black;
+}
+
+.content {
+    background-color: aliceblue;
+}
+
+.img-slider {
+    background-color: aquamarine;
+    height: 350px;
+}
+
+.con-p {
+    display: flex;
+}
+
+.con-p1 {
+    background-color: blueviolet;
+    height: 800px;
+    width: 20%;
+}
+
+.con-p2 {
+    background-color: tomato;
+    height: 1500px;
+    width: 60%;
+}
+
+.con-p3 {
+    display: flex;
+    flex-wrap: wrap;
+    height: 1500px;
+    width: 20%;
+    height: auto;
+}
+
+.con-p3-1 {
+    background-color: rgb(223, 146, 46);
+    height: 1000px;
+    width: 100%;
+}
+
+.con-p3-2 {
+    background-color: rgba(165, 19, 19, 0.6);
+    height: 500px;
+    width: 100%;
+}
+
+.helper {
+    position: fixed;
+    bottom: 10%;
+    right: 40px;
+    border-radius: 50%;
+    height: 90px;
+    width: 90px;
+    background-color: rgb(179, 255, 0);
+}
+
+.fot1 {
+    background-color: #212121;
+    color: aliceblue;
+    height: 100px;
+}
+
+.breakline {
+    background-color: rgb(212, 202, 202);
+}
+
+.fot2 {
+    background-color: #212121;
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/********************************************* Responsive css start ************************************* */
+
+
+@media only screen and (max-width:740px) {
+    .con-p {
+        flex-direction: column;
+    }
+
+    .con-p1 {
+        width: 100%;
+        height: 170px;
+    }
+
+    .con-p2 {
+        width: 100%;
+    }
+
+    .con-p3 {
+        width: 100%;
+    }
+
+    .con-p3-1 {
+        width: 80%;
+    }
+
+    .con-p3-2 {
+        width: 20%;
+        height: auto;
+    }
+}
+
+@media only screen and (max-width:500px) {
+    .img-slider {
+        height: 200px;
+    }
+
+    .con-p1 {
+        height: 120px;
+    }
+
+    .helper {
+        height: 70px;
+        width: 70px;
+        bottom: 10%;
+    }
+}
+
+@media only screen and (max-width:380px) {
+    .con-p1 {
+        height: 100px;
+    }
+}
+
+@media only screen and (max-width:340px) {
+    .img-slider {
+        height: 170px;
+    }
+    .fot1{
+        height: 300px;
+    }
+}
